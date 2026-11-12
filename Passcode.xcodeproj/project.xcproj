@@ -11,20 +11,20 @@
     ],
   },
   "files": [
-    { "kind": "folder", "path": "Packode", "target-membership": [ "Packode" ] },
+    { "kind": "folder", "path": "Passcode", "target-membership": [ "Passcode" ] },
     {
       "kind": "group",
       "name": "Products",
       "children": [
-        { "path": "<PRODUCTS>/Packode.app", "id": "17F646C530A5D676003C8624", "type": "wrapper.application", "index": false },
+        { "path": "<PRODUCTS>/Passcode.app", "id": "17F646C530A5D676003C8624", "type": "wrapper.application", "index": false },
       ],
     },
   ],
   "targets": [
     {
-      "name": "Packode",
+      "name": "Passcode",
       "id": "17F646C430A5D676003C8624",
-      "product": "Products/Packode.app",
+      "product": "Products/Passcode.app",
       "product-type": "application",
       "build-phases": [
         "compile-sources",
@@ -42,6 +42,7 @@
         "ENABLE_PREVIEWS": "YES",
         "ENABLE_USER_SELECTED_FILES": "readonly",
         "GENERATE_INFOPLIST_FILE": "YES",
+        "INFOPLIST_KEY_NSFaceIDUsageDescription": "Use Face ID to unlock the app instead of entering your passcode.",
         "INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]": "YES",
         "INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]": "YES",
         "INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]": "YES",
@@ -57,7 +58,7 @@
         "LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]": "@executable_path/../Frameworks",
         "MACOSX_DEPLOYMENT_TARGET": "26.7",
         "MARKETING_VERSION": "1.0",
-        "PRODUCT_BUNDLE_IDENTIFIER": "sharif.Packode",
+        "PRODUCT_BUNDLE_IDENTIFIER": "sharif.Passcode",
         "PRODUCT_NAME": "$(TARGET_NAME)",
         "REGISTER_APP_GROUPS": "YES",
         "SDKROOT": "auto",

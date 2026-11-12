@@ -9,7 +9,6 @@ import Foundation
 import LocalAuthentication
 import Observation
 
-/// Owns the passcode state and authentication rules so the views only render UI.
 @MainActor
 @Observable
 final class PasscodeManager {

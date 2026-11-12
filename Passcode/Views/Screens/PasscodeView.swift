@@ -24,9 +24,17 @@ struct PasscodeView: View {
             Spacer()
 
             NumberPadView(
+                biometrySymbolName: manager.biometrySymbolName,
+                onBiometryTapped: {
+                    Task { await manager.authenticateWithBiometrics() }
+                },
                 onDigitTapped: manager.append,
                 onDeleteTapped: manager.removeLast
             )
+        }
+        // Offer Face ID as soon as the lock screen appears.
+        .task {
+            await manager.authenticateWithBiometrics()
         }
     }
 }
